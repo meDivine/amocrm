@@ -1,7 +1,7 @@
 <?php
 require_once 'core/config.php';
-
 use core\Config;
+
 $config = new Config();
 ?>
 
