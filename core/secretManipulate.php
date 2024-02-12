@@ -1,8 +1,8 @@
 <?php
-namespace core;
+namespace Core;
 require_once 'config.php';
 
-use core\Config;
+use Core\Config;
 
 class SecretManipulate {
     private $_payload;

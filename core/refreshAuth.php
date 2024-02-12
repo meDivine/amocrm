@@ -1,9 +1,9 @@
 <?php
 require 'vendor/autoload.php';
 use GuzzleHttp\Client;
-use core\Config;
-use core\SecretManipulate;
-use core\TokenManipulate;
+use Core\Config;
+use Core\SecretManipulate;
+use Core\TokenManipulate;
 
 require_once 'config.php';
 require_once 'secretManipulate.php';

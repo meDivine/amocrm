@@ -1,5 +1,5 @@
 <?php
-namespace core;
+namespace Core;
 
 class TokenManipulate {
     private $_payload;

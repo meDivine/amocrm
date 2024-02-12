@@ -1,5 +1,5 @@
 <?php
-namespace core;
+namespace Core;
 require 'vendor/autoload.php';
 require_once 'config.php';
 require_once 'tokenManipulate.php';
