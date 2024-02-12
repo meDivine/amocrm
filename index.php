@@ -1,6 +1,6 @@
 <?php
 require_once 'core/config.php';
-use core\Config;
+use Core\Config;
 
 $config = new Config();
 ?>
@@ -19,23 +19,27 @@ $config = new Config();
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="mb-4">Форма</h2>
-
             <form id="myForm">
+                <div id="result"></div>
                 <div class="mb-3">
                     <label for="name" class="form-label">Имя</label>
                     <input type="text" class="form-control" id="name" name="name" required>
+                    <span id="nameError" style="color: red;"></span>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Почта</label>
                     <input type="email" class="form-control" id="email" name="email" required>
+                    <span id="emailError" style="color: red;"></span>
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Телефон</label>
                     <input type="tel" class="form-control" id="phone" name="phone" required>
+                    <span id="phoneError" style="color: red;"></span>
                 </div>
                 <div class="mb-3">
                     <label for="price" class="form-label">Цена</label>
                     <input type="number" class="form-control" id="price" name="price" required>
+                    <span id="priceError" style="color: red;"></span>
                 </div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
 
@@ -69,6 +73,5 @@ $config = new Config();
         });
     });
 </script>
-
 </body>
 </html>
