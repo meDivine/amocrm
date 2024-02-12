@@ -1,9 +1,9 @@
 <?php
-require_once 'core/leads.php';
+require_once 'core/formSender.php';
 
-use core\Leads;
+use Core\FormSender;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $leads = new Leads($_POST["name"], $_POST["email"], $_POST["phone"], $_POST["price"]);
-    $leads->send();
+    $form = new FormSender($_POST["name"], $_POST["email"], $_POST["phone"], $_POST["price"]);
+    $form->sendForm();
 }
