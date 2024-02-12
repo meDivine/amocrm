@@ -2,7 +2,7 @@
 require_once '../core/secretManipulate.php';
 require_once '../core/refreshAuth.php';
 use RefreshAuth;
-use core\SecretManipulate;
+use Core\SecretManipulate;
 
 //псевдо csrf проверка
 if ($_GET['state'] == "asd") {
